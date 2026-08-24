@@ -1,6 +1,6 @@
 # Brite Hackathon — Dirty Data, Real Decisions
 
-## 📌 Project Overview
+## Project Overview
 
 This project analyzes historical case-management data covering **2023–2025** to understand changes in case closure times and identify operational factors associated with those changes.
 
@@ -10,7 +10,7 @@ A supplementary export extracted on **14 January 2026** was also provided. This 
 
 ---
 
-## 🎯 Objectives
+## Objectives
 
 The analysis addresses three main operational questions:
 
@@ -34,7 +34,7 @@ Assess whether the available data can establish the impact of the high-priority 
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 The project uses two case-management exports:
 
@@ -60,7 +60,7 @@ The original dataset is preserved unchanged. All cleaning and transformations ar
 
 ---
 
-# 🔍 Methodology
+# Methodology
 
 The analysis follows a documented data-quality and reconciliation pipeline.
 
@@ -94,7 +94,7 @@ Recommendations & Limitations
 
 ---
 
-# 🧹 Data Quality Assessment
+# Data Quality Assessment
 
 Several data-quality issues were investigated before conducting the operational analysis.
 
@@ -144,7 +144,7 @@ This prevents legitimate long-running cases from being incorrectly discarded.
 
 ---
 
-# 🔄 Supplementary Export Reconciliation
+# Supplementary Export Reconciliation
 
 The supplementary export used different field names, so its fields were mapped to the original structure.
 
@@ -177,7 +177,7 @@ This approach avoids introducing undocumented assumptions into the analysis.
 
 ---
 
-# 📈 Q1 — Have Closure Times Increased?
+# Q1 — Have Closure Times Increased?
 
 After reconciliation, the median closure time showed a consistent upward trend:
 
@@ -210,7 +210,7 @@ The Q1 conclusion is considered **high confidence**, subject to the documented d
 
 ---
 
-# 🏢 Q2 — What Is Driving the Change?
+# Q2 — What Is Driving the Change?
 
 The analysis compared closure times across operational dimensions including:
 
@@ -305,7 +305,7 @@ The 2024–2025 difference should not be interpreted as a causal effect of the t
 
 ---
 
-# 📋 Confidence Summary
+# Confidence Summary
 
 | Question | Finding                                                                                  | Confidence   |
 | -------- | ---------------------------------------------------------------------------------------- | ------------ |
@@ -315,7 +315,7 @@ The 2024–2025 difference should not be interpreted as a causal effect of the t
 
 ---
 
-# 💡 Key Recommendations
+# Key Recommendations
 
 ## 1. Investigate Weybridge
 
@@ -374,7 +374,7 @@ It would also make future causal or quasi-experimental evaluation of the triage 
 
 ---
 
-# ⚠️ Limitations
+# Limitations
 
 The analysis has several important limitations.
 
@@ -404,7 +404,7 @@ Observed relationships should be interpreted as operational signals requiring fu
 
 ---
 
-# 📁 Suggested Repository Structure
+# Suggested Repository Structure
 
 ```text
 brite-hackathon/
@@ -432,7 +432,7 @@ brite-hackathon/
 
 ---
 
-# 🛠️ Technologies Used
+# Technologies Used
 
 * **Python**
 * **Pandas**
@@ -443,7 +443,7 @@ brite-hackathon/
 
 ---
 
-# ▶️ How to Run
+# How to Run
 
 ### 1. Clone the repository
 
@@ -484,7 +484,7 @@ and run the cells sequentially.
 
 ---
 
-# 🔬 Reproducibility
+# Reproducibility
 
 The analysis prioritizes reproducibility through:
 
@@ -501,7 +501,7 @@ The project intentionally avoids silently correcting or overwriting source data.
 
 ---
 
-# 🏁 Final Conclusion
+# Final Conclusion
 
 The analysis provides strong evidence that **case closure times increased between 2023 and 2025**, with median closure time increasing from **34 to 39 days**.
 
